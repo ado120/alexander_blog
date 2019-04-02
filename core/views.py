@@ -11,4 +11,4 @@ def blog_index(request):
     else:
         context_dict['posts'] = Post.objects.filter(is_published=True)
 
-    return render(request, template_name='index.html', context=context_dict)
+    return render(request, template_name='blog.html', context=context_dict)
