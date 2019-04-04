@@ -1,9 +1,10 @@
 {% extends 'base.html' %}
+{% load martortags %}
 
 {% block content %}
     <h1>Test</h1>
     {% for post in posts %}
         <h3>{{ post.title }}</h3>
-        <p>{{ post.content }}</p>
+        <p>{{ post.content|safe_markdown }}</p>
     {% endfor %}
 {% endblock %}
