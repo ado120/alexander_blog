@@ -13,7 +13,8 @@ This repo will house the code for my personal blog website!
 
 
 ### To-Dos
-1. Create Nav-bar/Footer
+1. Fix footer
 2. Create Basic Landing Page/Link to blog in navbar
-3. Fix/Solve the tagging/category in model (CHECK)
+3. Post design
 4. Implement text formatting for posts with code/links 
+5. Add syntax highlighting (highlight JS)

@@ -2,9 +2,15 @@
 {% load martortags %}
 
 {% block content %}
-    <h1>Test</h1>
+    <h1>Blog_Index</h1>
+    <hr>
     {% for post in posts %}
-        <h3>{{ post.title }}</h3>
-        <p>{{ post.content|safe_markdown }}</p>
+        <div class="post-section">
+            <h4>{{ post.title }}</h4>
+            {% if not post.is_published %}
+                <span class="alert alert-info small">Draft</span>
+            {% endif %}
+        </div>
     {% endfor %}
+
 {% endblock %}

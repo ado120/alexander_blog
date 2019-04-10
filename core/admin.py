@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.db import models
-from core.models import Post
+from core.models import Post, Category
 from martor.widgets import AdminMartorWidget
 
 
@@ -12,4 +12,5 @@ class PostAdmin(admin.ModelAdmin):
     }
 
 
+admin.site.register(Category)
 admin.site.register(Post, PostAdmin)
