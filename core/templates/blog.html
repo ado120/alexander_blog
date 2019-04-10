@@ -2,11 +2,11 @@
 {% load martortags %}
 
 {% block content %}
-    <h1>Blog_Index</h1>
+    <h1>Blog Posts</h1>
     <hr>
     {% for post in posts %}
         <div class="post-section">
-            <h4>{{ post.title }}</h4>
+            <h4><a href="{% url 'post_view' %}">{{ post.title }}</a></h4>
             {% if not post.is_published %}
                 <span class="alert alert-info small">Draft</span>
             {% endif %}

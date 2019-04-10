@@ -14,5 +14,13 @@ def blog_index(request):
     context_dict['posts'] = posts[:limit]
     return render(request, template_name='blog.html', context=context_dict)
 
-# def post_view(request):
 
+# def post_view(request, pk):
+#     post = Post.objects.get(pk=pk)
+#     context = {
+#         "post": post,
+#     }
+#     return render(request, "blog_post.html", context)
+
+def post_view(request):
+    return render(request, "blog_post.html")
