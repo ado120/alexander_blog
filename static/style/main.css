@@ -11,7 +11,7 @@
 
 /*header style*/
 .header{
-  background-image: url('/static/images/waterfall.jpg');
+  background-image: url('static/images/waterfall.jpg');
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
