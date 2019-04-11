@@ -15,12 +15,13 @@ def blog_index(request):
     return render(request, template_name='blog.html', context=context_dict)
 
 
-# def post_view(request, pk):
-#     post = Post.objects.get(pk=pk)
-#     context = {
-#         "post": post,
-#     }
-#     return render(request, "blog_post.html", context)
+def post_view(request, slug, pk):
 
-def post_view(request):
-    return render(request, "blog_post.html")
+    post = Post.objects.get(slug=slug, pk=pk)
+    context = {
+        "post": post,
+    }
+    return render(request, "blog_post.html", context)
+
+# def post_view(request):
+#     return render(request, "blog_post.html")
