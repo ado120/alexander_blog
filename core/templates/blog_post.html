@@ -2,8 +2,18 @@
 {% load martortags %}
 
 {% block content %}
+<div class="row">
     <h1>{{  post.title }}</h1>
-    <p>{{ post.content }}</p>
-
+</div>
+<div class="row">
+    <h2>{{ post.published_date }}</h2>
+</div>
+<div class="row">
+    <p>
+        <pre>
+        <code>{{ post.content|safe_markdown }}</code>
+    </pre>
+    </p>
+</div>
 
 {% endblock %}
