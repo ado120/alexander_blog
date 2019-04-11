@@ -4,15 +4,30 @@
 {% block content %}
     <h1>Blog Posts</h1>
     <hr>
-    {% for post in posts %}
-        <div class="post-section container">
-            <h4>
-                <a href="{% url 'post_view' post.slug post.pk %}">{{ post.title }}</a>
-            </h4>
-            {% if not post.is_published %}
-                <span class="badge badge-secondary">Draft</span>
-            {% endif %}
+    <div class="row">
+        <div class="col-md-8 blog-main">
+            {% for post in posts %}
+                <div class="post-section container">
+                    <h4>
+                        <a href="{% url 'post_view' post.slug post.pk %}">{{ post.title }}</a>
+                        {% if not post.is_published %}
+                        <span class="badge badge-secondary">Draft</span>
+                    {% endif %}
+                    </h4>
+                </div>
+            {% endfor %}
         </div>
-    {% endfor %}
+        <aside class="col-md-4">
+            <div class="p-3 mb-3 bg-light rounded">
+                <h4>About</h4>
+            </div>
+            <div class="p-3">
+                <h4>Categories</h4>
+                {% for post in posts %}
+                <h6>{{ post.categories }}</h6>
+                {%  endfor %}
+            </div>
+        </aside>
+    </div>
 
 {% endblock %}
