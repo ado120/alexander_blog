@@ -23,8 +23,8 @@
             </div>
             <div class="p-3">
                 <h4>Categories</h4>
-                {% for post in posts %}
-                <h6>{{ post.categories }}</h6>
+                {% for cat in categories %}
+                <h6>{{ cat.name }}</h6>
                 {%  endfor %}
             </div>
         </aside>
