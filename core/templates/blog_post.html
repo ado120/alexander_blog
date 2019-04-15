@@ -8,11 +8,9 @@
 <div class="row">
     <h2>{{ post.published_date }}</h2>
 </div>
-<div class="row">
+<div>
     <p>
-        <pre>
-        <code>{{ post.content|safe_markdown }}</code>
-    </pre>
+        {{ post.content|safe_markdown }}
     </p>
 </div>
 
