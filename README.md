@@ -13,9 +13,6 @@ This repo will house the code for my personal blog website!
 
 
 ### To-Dos
-1. Fix footer (CHECK)
-2. Create Basic Landing Page/Link to blog in navbar (JPEG picture is not working)
-3. Post design
-4. Implement text formatting for posts with code/links 
-5. Syntax highlighting added, but need to fix display of it
-6. Make categories have an href to all posts with that category
+1. Completely redo landing page
+2. Uninstall all markdown packages and re-install a fresh one
+3. Get highlightJS to work with the code
