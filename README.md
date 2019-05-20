@@ -16,3 +16,8 @@ This repo will house the code for my personal blog website!
 1. Completely redo landing page
 2. Uninstall all markdown packages and re-install a fresh one
 3. Get highlightJS to work with the code
+4. Get header to work, static?
+5. CSS body selector doesn't work?
+
+
+1. Read up more on Settings.py

@@ -1,7 +1,6 @@
 from django.db import models
 from datetime import datetime
 # from taggit.managers import TaggableManager
-from martor.models import MartorField
 from django.utils import timezone
 
 
@@ -15,7 +14,7 @@ class Category(models.Model):
 
 class Post(models.Model):
     title = models.CharField(max_length=500, null=False, blank=False)
-    content = MartorField()
+    content = models.TextField(blank=False)
     categories = models.ManyToManyField('Category')
     published_date = models.DateTimeField(default=timezone.now)
     slug = models.SlugField(max_length=250)

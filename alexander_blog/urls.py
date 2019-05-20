@@ -20,5 +20,4 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('blog/', include('core.urls')),
     path('', include('landing_page.urls')),
-    path('martor/', include('martor.urls')),
 ]

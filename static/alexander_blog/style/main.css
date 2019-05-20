@@ -1,3 +1,10 @@
+body {
+  /* background-color: #f5d9d5; */
+  background-color: white;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300
+}
+
 
 .footer {
   position: absolute;
@@ -10,8 +17,8 @@
 }
 
 /*header style*/
-.header{
-  background-image: url('/static/images/waterfall.jpg');
+#header {
+  background-image: url('static/images/waterfall.jpg');
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
