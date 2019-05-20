@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'core',
     'taggit',
     'landing_page',
+    'markdownify',
 ]
 
 MIDDLEWARE = [
@@ -124,5 +125,8 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static/alexander_blog'),)
+
+
+MARKDOWNIFY_BLEACH = False
 
 

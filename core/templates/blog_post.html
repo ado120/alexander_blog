@@ -1,17 +1,22 @@
 {% extends 'base.html' %}
-{% load martortags %}
+{% load markdownify %}
 
 {% block content %}
-<div class="row">
-    <h1>{{  post.title }}</h1>
+<div class="container">
+    <div class="row mt-4">
+        <h2>{{ post.title }}</h2>
+    </div>
+    <div class="row">
+        <h4 class="text-muted">{{ post.published_date }}</h4>
+    </div>
+    <br>
 </div>
-<div class="row">
-    <h2>{{ post.published_date }}</h2>
-</div>
-<div>
+
+<div class="container">
     <p>
-        {{ post.content|safe_markdown }}
+        {{ post.content|markdownify }}
     </p>
 </div>
+
 
 {% endblock %}
