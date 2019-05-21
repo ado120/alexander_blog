@@ -18,3 +18,5 @@ This repo will house the code for my personal blog website!
 3. Get highlightJS to work with the code
 4. Get header to work, static?
 5. Read up more on settings.py
+6. Create working categories view
+7. 

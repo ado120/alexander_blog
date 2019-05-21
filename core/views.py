@@ -25,4 +25,7 @@ def post_view(request, slug, pk):
     }
     return render(request, "blog_post.html", context)
 
+# def category_view(request, categories):
+
+
 

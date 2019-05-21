@@ -9,9 +9,10 @@
                 <div class="post-section container">
                     <h4>
                         <a href="{% url 'post_view' post.slug post.pk %}">{{ post.title }}</a>
+                        <span class="badge badge-dark">Test</span>
                         {% if not post.is_published %}
                         <span class="badge badge-secondary">Draft</span>
-                    {% endif %}
+                        {% endif %}
                     </h4>
                 </div>
             {% endfor %}
@@ -20,7 +21,7 @@
             <div class="p-3">
                 <h4>Categories</h4>
                 {% for cat in categories %}
-                <h6>{{ cat.name }}</h6>
+                <h6><a href="{% url 'category_view' cat.name">{{ cat.name }}</a></h6>
                 {%  endfor %}
             </div>
         </aside>
