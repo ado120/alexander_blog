@@ -9,7 +9,9 @@
                 <div class="post-section container">
                     <h4>
                         <a href="{% url 'post_view' post.slug post.pk %}">{{ post.title }}</a>
-                        <span class="badge badge-dark">Test</span>
+                        {% for cat in post.categories.all %}
+                        <span class="badge badge-dark">{{ cat }}</span>
+                        {% endfor %}
                         {% if not post.is_published %}
                         <span class="badge badge-secondary">Draft</span>
                         {% endif %}
