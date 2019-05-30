@@ -16,11 +16,11 @@ body {
   color: red;
 }
 
-/*header style*/
-#header {
-  background-image: url('static/images/waterfall.jpg');
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
- }
 
+ .fab {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+ }

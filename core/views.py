@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from core.models import Post, Category
+from django.http import HttpResponse
+import datetime
 
 
 # Create your views here.
@@ -25,7 +27,10 @@ def post_view(request, slug, pk):
     }
     return render(request, "blog_post.html", context)
 
-# def category_view(request, categories):
+def current_datetime(request):
+    now = datetime.datetime.now()
+    html = "<html><body>It is now %s.</body></html>" % now
+    return HttpResponse(html)
 
 
 
