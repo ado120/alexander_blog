@@ -21,3 +21,12 @@ This repo will house the code for my personal blog website!
 6. Create working categories view
 7. Why are icons blue, get new icons
 8. Make reviews page
+
+
+
+1. Fix Categories
+2. Change syntax highlighting colors
+3. Typography/Design a bit
+4. Consistent social media icons
+    a. https://dribbble.com/shots/2247532-Freebies-Social-flat-icons-set
+    b. https://dribbble.com/shots/1573944-Freebie-iOS7-Style-Social-Media-Icons
